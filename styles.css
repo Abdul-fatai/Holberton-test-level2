@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 0px;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: red;
+  }
+
+  .active {
+    background-color: #111;
+  }
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+
+/* Article section */
+
+article {
+    flex: 2;
+    overflow-y: auto
+}
+
+.card{
+    margin: 15px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.card-title{
+    padding: 15px;
+}
+
+.card-title h1{
+    font-size: 28px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.card-image{
+   overflow: hidden;
+}
+
+.card-image img{
+  transition: transform .5s ease;
+  width: 100%;
+ }
+ .card-image img:hover{
+  transform: scale(1.5);
+ }
+ 
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content p{
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.read {
+  color: #fff;
+  background-color: rgb(18, 114, 223);
+  text-decoration: none;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+
+.about{
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.about h1{
+  font-size: 35px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+/* Article section ends */
+
+
+
+aside {
+    flex: 1;
+    overflow-y: auto
+}
+
+header{
+    padding: 0px;
+}
+
+nav {
+  box-shadow: 0 8px 6px -6px grey;
+    z-index: 2;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: black;
+  }
+
+  .active {
+    background-color: grey;
+  }
+
+
+
+  footer {
+      background-color: #111;
+      padding: 10px;
+  }
+
+  footer, #p{
+      text-align: center;
+      color: #fff;
+  }
+ 
+  footer a{
+      color: #fff;
+  }
+
+  footer a:hover{
+    color: rgb(18, 114, 223);
+}
